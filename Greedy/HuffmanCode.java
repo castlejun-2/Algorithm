@@ -25,8 +25,8 @@ public class Huffman {
 			Node temp = new Node();
 			temp.right = pq.poll();
 			temp.left = pq.poll();
-			temp.f=temp.right.f + temp.left.f; //오름차순으로 정렬된 빈도수가 작은 두개 노드의 빈도수를 더함
-			pq.add(temp);					   //다시 우선순위큐에 더해진 값을 삽입
+			temp.f=temp.right.f + temp.left.f;	 //오름차순으로 정렬된 빈도수가 작은 두개 노드의 빈도수를 더함
+			pq.add(temp);			         //다시 우선순위큐에 더해진 값을 삽입
 		}
 		return pq.poll(); //최종적으로 남은 root Node 반환
 	}
@@ -37,7 +37,7 @@ public class Huffman {
 			return;
 		traversal(Nd.left,st+"0");		//왼쪽노드로 갈때 0추가
 		traversal(Nd.right,st+"1");		//오른쪽노드로 갈때 1추가
-		if(Nd.ch != '\0') {				//노드의 character가 비어있지 않다면 출력
+		if(Nd.ch != '\0') {			//노드의 character가 비어있지 않다면 출력
 			System.out.print("\"" + Nd.ch + "\" frequency: ");
 			System.out.print(fq.get(Nd.ch));
 			System.out.println(" and HuffmanCode: " + st);
@@ -50,8 +50,10 @@ public class Huffman {
 		int num=0; //전체 노드의 갯수를 확인할 변수
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Huffman Code로 수정할 문자열: ");
-		try { //test.txt 파일로부터 문자열 읽어오기
-			String fstr = "C:\\Users\\LEE\\OneDrive\\Desktop\\Dankook university\\3학년\\알고리즘/test.txt";
+		//test.txt 파일로부터 문자열 읽어오기
+		try {   //try catch를 통해 파일을 읽어오는 과정에서 오류가 발생하는지 확인
+			//test.txt 파일로부터 문자열 읽어오기
+			String fstr = "C:\\Users\\LEE\\OneDrive\\Desktop\\Dankook university\\3학년\\알고리즘/test.txt";     
 			BufferedReader bstr = new BufferedReader(new FileReader(fstr));
 			String str = bstr.readLine(); 
 			System.out.println(str + "\n");

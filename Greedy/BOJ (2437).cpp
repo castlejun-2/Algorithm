@@ -27,3 +27,4 @@ int main(){
     delete[] arr;               //동적 할당 해제
     return 0;
 }
+//arr[i]가 sum+1보다 작으면 sum+1의 숫자가 표현될 수 없음을 찾는것이 중요한 문제였다.

@@ -1,4 +1,4 @@
-# Algorithm
+# Algorithm Technique
 ---
 ## **_1. Data Structures Algorithm_**
 문제에 어떠한 자료구조를 사용하는것이 적합한지를 판단하고, 이를 해결에 나아가는 알고리즘 기법이다.

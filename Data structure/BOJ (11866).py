@@ -1,7 +1,7 @@
 from collections import deque
 
 N,K=map(int,input().split())
-y_list=[i for i in range(1,N+1)]    #요세푸스 list를 1부터 N까지 값 생성
+y_list=[i for i in range(1,N+1)]    #요세푸스 list에 1부터 N까지 값 입력
 dq=deque(y_list)                    #리스트를 deque에 삽입
 
 print('<',end="")

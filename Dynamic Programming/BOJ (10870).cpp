@@ -13,8 +13,8 @@ int main()
     //a[0]과 a[1]값만 초기화
     a[0]=0;
     a[1]=1;
-    
     cin >> n;
+    
     for(int i=2;i<=n;i++)
         a[i]=fibonacci(a[i-1],a[i-2]);       //An = An-1 + An-2(n>=2) 이므로 다음과 같은 식 성립
     

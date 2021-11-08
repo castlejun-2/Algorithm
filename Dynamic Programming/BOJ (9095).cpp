@@ -13,7 +13,7 @@ int main(){
   for(int i=0;i<T;i++){                                       
     int test=0;                                               //쓰레기값이 들어감을 방지해, 반복마다 test 값을 초기화해준다.
     cin >> test;                                              //테스트 할 값을 입력받는다
-    for(int j=4;j<=test;j++){                                 //4부터 test값 까지 조건문을 반복해준다
+    for(int j=4;j<=test;j++){                                 //1-3의 index는 초기값으로 사용되었으므로 4부터 test값 까지 조건문을 반복해준다
       DP[j]=DP[j-3]+DP[j-2]+DP[j-1];                          //동적 프로그래밍 기법을 이용하여 알고리즘을 작성
     }
     cout << DP[test] <<endl;

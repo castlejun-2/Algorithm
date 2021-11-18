@@ -73,7 +73,7 @@ void ShortestPath(int n, int v)
     			   System.out.print(" -> " + stack.pop()) ;
     		}
     		else
-    			System.out.print(" 경로 없음");
+    			System.out.print("경로 없음");
     		System.out.println();	    	   		
 	   	} // end of for    
 	} 

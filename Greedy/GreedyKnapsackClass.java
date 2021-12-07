@@ -1,9 +1,8 @@
 public class GreedyKnapsackClass {
-
-	private Obj obj[] ;
-	private float x[] ;
-	private int ObjSize ;
-
+    private Obj obj[] ;
+    private float x[] ;
+    private int ObjSize ;
+	
     public GreedyKnapsackClass(Obj ob[], int n) {  
     	obj = ob; 
     	ObjSize = n ;

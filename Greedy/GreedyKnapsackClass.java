@@ -16,7 +16,6 @@ public class GreedyKnapsackClass {
         	obj[j+1] = b ;
         }  	
     }
-    
     public void printResult() {
     	
     	int tp = 0 ;
@@ -28,7 +27,6 @@ public class GreedyKnapsackClass {
     	}
     	System.out.println("총 이익  = "+tp) ;
     }
- 
     public void GreedyKnapsack(float m, int n) {
     // p[1:n] and w[1:n] contain the profits and weights
     // respectively of the n objects ordered such that

@@ -26,7 +26,9 @@ int main(){
             max=sum[i];
     }
     cout << max;                                        //최댓값 출력
+    //동적 해제
     delete[] sum;
     delete[] get;
     delete[] cmp;
+    return 0;
 }

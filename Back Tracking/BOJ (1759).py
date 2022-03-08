@@ -1,4 +1,4 @@
-#---BackTracking(백트래킹) 방법---
+#---Back Tracking(백트래킹) 방법---
 from sys import stdin
 
 def bfs(idx):
@@ -26,7 +26,7 @@ arr=[]
 checked=[0]*C
 bfs(0)
 
-#---combination(조합) 방법---
+#---Combination(조합) 방법---
 #조합방법은 하나하나 가능한 조합을 만들지 않고 함수로 사용하여 일괄적으로 만든것이 위의 방법과 차이가 있다.
 from sys import stdin
 from itertools import combinations

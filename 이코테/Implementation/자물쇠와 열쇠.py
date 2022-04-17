@@ -3,6 +3,7 @@ lock=[[1,1,1],[1,1,0],[1,0,1]]
 
 def rotate(key):    #회전
     return list(zip(*key[::-1]))
+
 def check_key(n_lock):  #lock과 key를 더하면 1이 됨을 확인
     lock_length=len(n_lock)//3
     for i in range(lock_length,lock_length*2):

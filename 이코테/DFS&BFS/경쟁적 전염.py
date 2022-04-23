@@ -8,7 +8,6 @@ N,K=map(int,stdin.readline().strip().split())
 test_tube_list=[list(map(int,stdin.readline().strip().split())) for _ in range(N)]
 S,X,Y=map(int,stdin.readline().strip().split())
 virus_list=[]
-
 time=0
 
 for i in range(N):

@@ -19,3 +19,16 @@ def solution(id_list, report, k):
                             answer[idx]+=1  #자신이 받을 메일에 +1
                             break
     return answer
+
+def reservedsolution(id_list, report, k):
+    answer=[0]*len(id_list)
+    reports = {x : 0 for x in id_list}  #id가 신고당한 횟수
+    
+    for r in set(report):
+        reports[r.split()[1]]+=1    #신고당한 user의 reports값을 +1
+    
+    for r in set(report):
+        if reports[r.split()[1]] >= k:  #신고한 user가 k 이상이면
+            answer[id_list.index(r.split()[0])]+=1  #자신이 받을 메일에 +1 추가
+            
+    return answer

@@ -1,7 +1,7 @@
+#나의 풀이
 def solution(s):
     answer=[]
-    dictionary={ 'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4,
-                'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}
+    dictionary={ 'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6, 'seven': 7, 'eight': 8, 'nine': 9}
     idx=0
     while idx<len(s): #s의 길이만큼탐색
         if '0'<=s[idx]<='9':  #숫자라면 answer에 바로 저장
@@ -14,3 +14,13 @@ def solution(s):
                 idx+=1
             answer.append(dictionary[tmp])  #완성된 단어 tmp를 숫자로 변환해서 answer에 저장
     return int("".join(map(str,answer)))  #join함수를 통해 문자열들을 이어붙히고 int형으로 변환
+
+
+#정답코드
+num_dic = {"zero":"0", "one":"1", "two":"2", "three":"3", "four":"4", "five":"5", "six":"6", "seven":"7", "eight":"8", "nine":"9"}
+
+def solution(s):
+    answer = s
+    for key, value in num_dic.items():
+        answer = answer.replace(key, value)
+    return int(answer)

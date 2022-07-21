@@ -1,4 +1,3 @@
-import copy
 from sys import stdin
 
 def rotate(N):

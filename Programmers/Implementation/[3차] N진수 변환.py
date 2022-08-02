@@ -7,7 +7,7 @@ def solution(n, t, m, p):
             if k>=10 and 10<=int(mod)<=15:  #진법이 10이상이고 나머지가 10-15 사이일 때 A-F로 치환
                 result+=dic[mod]
             else:
-                result += str(mod)
+                result+=str(mod)
         return result[::-1]
     tmp = '0' #0부터 시작
     answer = ''

@@ -1,0 +1,10 @@
+def solution(n, s):
+    if n>s:
+        return [-1]
+    p,q = divmod(s,n)
+    answer = [p]*n
+    
+    for i in range(q):
+        answer[n-1-i]+=1
+    
+    return answer
